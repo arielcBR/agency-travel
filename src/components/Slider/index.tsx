@@ -1,31 +1,28 @@
-import {
-  CarouselContainer,
-  StyledSwiper,
-} from "./styles"
-import { SwiperSlide } from "swiper/react"
+import { CarouselContainer, StyledSwiper } from "./styles";
+import { SwiperSlide } from "swiper/react";
 import { v4 as uuidv4 } from "uuid";
-import { Navigation, A11y } from "swiper/modules"
-import { ServiceCard } from "../ServiceCard"
-import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint"
+import { Navigation, A11y, Autoplay } from "swiper/modules";
+import { ServiceCard } from "../ServiceCard";
+import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 import "swiper/swiper-bundle.css";
 
 export interface ServiceCardData {
-    name: string;
-    description: string;
-    price: number;
-    image: string;
-    city: string;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+  city: string;
 }
 
 interface SliderProps {
-    slides: ServiceCardData[]
+  slides: ServiceCardData[];
 }
 
 export function Slider({ slides }: SliderProps) {
   return (
     <CarouselContainer>
       <StyledSwiper
-        modules={[Navigation, A11y]}
+        modules={[Navigation, A11y, Autoplay]}
         navigation
         loop
         style={
@@ -34,6 +31,10 @@ export function Slider({ slides }: SliderProps) {
             "--swiper-navigation-size": "25px",
           } as any
         }
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+        }}
         breakpoints={{
           [parseInt(DEVICE_BREAKPOINT.XS)]: {
             slidesPerView: 2,

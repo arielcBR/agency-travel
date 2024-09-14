@@ -4,7 +4,7 @@ import {
 } from "./styles"
 import { SwiperSlide } from "swiper/react"
 import { v4 as uuidv4 } from "uuid";
-import { Pagination, Navigation, A11y } from "swiper/modules"
+import { Navigation, A11y } from "swiper/modules"
 import { ServiceCard } from "../ServiceCard"
 import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint"
 import "swiper/swiper-bundle.css";
@@ -25,10 +25,15 @@ export function Slider({ slides }: SliderProps) {
   return (
     <CarouselContainer>
       <StyledSwiper
-        modules={[Navigation, Pagination, A11y]}
-        pagination={{ clickable: true }}
+        modules={[Navigation, A11y]}
         navigation
         loop
+        style={
+          {
+            // @ts-ignore
+            "--swiper-navigation-size": "25px",
+          } as any
+        }
         breakpoints={{
           [parseInt(DEVICE_BREAKPOINT.XS)]: {
             slidesPerView: 2,

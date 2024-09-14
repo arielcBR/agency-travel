@@ -6,6 +6,7 @@ export const ServiceCardContainer = styled.div`
   align-items: center;
   justify-content: center;
 
+  margin-bottom: 5rem;
   height: 40rem;
   min-width: 18rem;
   max-width: 24rem;
@@ -41,6 +42,8 @@ export const ServiceBody = styled.div`
     font-size: 2rem;
     margin-bottom: 2rem;
     text-transform: capitalize;
+    overflow: hidden; 
+    text-overflow: ellipsis;
     white-space: nowrap; 
   }
 

@@ -1,11 +1,11 @@
-import { Button } from "../Button";
-import { ServiceCard } from "../ServiceCard";
 import {
   OurServicesContainer,
   HeaderContent,
   InfoContent,
   Carrousel,
-} from "./styles";
+} from "./styles"
+import { Button } from "../Button"
+import { Slider } from '../Slider'
 
 import { services } from '../../mocks/listOfServices'
 
@@ -33,7 +33,7 @@ export function OurServices() {
       </HeaderContent>
 
       <Carrousel>
-        <ServiceCard service={services[0]} />
+        <Slider slides={services} />
       </Carrousel>
     </OurServicesContainer>
   );

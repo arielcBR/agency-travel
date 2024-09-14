@@ -28,7 +28,7 @@ export const services = [
     description:
       "Visite Campanópolis, um tesouro medieval localizado a apenas 30 km de Buenos Aires, onde os sonhos ganham vida. Neste lugar encantado, a Idade Média é revivida através de construções antigas que farão você se sentir parte de um conto de fadas. Com bosques encantados, castelos majestosos, torres imponentes e casas que parecem ter saído de um livro mágico, Campanópolis é uma experiência única. Explore as casinhas encantadas no bosque, onde até a Cinderela pode aparecer a qualquer momento. Não deixe de visitar a parte mais colorida e extravagante, onde portas misteriosas ligam lugares mágicos e corujas de ferro e madeira observam com olhares curiosos. Este espaço lembra as obras vibrantes do mestre Gaudí! Deixe-se transportar para um universo medieval e surreal, onde a imaginação não tem limites. Campanópolis é mais do que um destino, é uma viagem à magia e ao encantamento. Venha e viva o sonho!",
     price: 199.9,
-    image: "camponopolis.png",
+    image: "campanopolis.png",
     city: "buenos aires",
   },
   {
@@ -36,7 +36,7 @@ export const services = [
     description:
       "Partida em uma confortável van em direção à pitoresca cidade de Tigre, onde iniciamos nossa emocionante navegação pelo Delta. Durante o passeio, desfrutamos de uma parada para fotos no renomado Museu de Arte e, em seguida, dispomos de 30 minutos para explorar o charmoso Puerto de Frutos. O retorno ao centro de Buenos Aires também é feito com todo o conforto em nossa van.",
     price: 239.9,
-    image: "tigre.png",
+    image: "tigre.jpg",
     city: "buenos aires",
   },
   {

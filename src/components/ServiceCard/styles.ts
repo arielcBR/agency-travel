@@ -7,8 +7,8 @@ export const ServiceCardContainer = styled.div`
   justify-content: center;
 
   height: 40rem;
-  min-width: 25rem;
-  max-width: 30rem;
+  min-width: 18rem;
+  max-width: 24rem;
   width: 80vw;
 `;
 
@@ -30,7 +30,7 @@ export const ServiceBody = styled.div`
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border: 2px solid rgba(209, 209, 209, 0.75);
-  padding: 2rem 2.8rem 1rem 2.8rem;
+  padding: 2rem 2.8rem 1rem 2rem;
   width: 100%;
 
   color: ${({ theme }) => theme.black};
@@ -38,9 +38,10 @@ export const ServiceBody = styled.div`
   font-weight: 500;
 
   h4 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     text-transform: capitalize;
+    white-space: nowrap; 
   }
 
   > span {
@@ -49,7 +50,7 @@ export const ServiceBody = styled.div`
     justify-content: space-between;
 
     color: ${({ theme }) => theme["gray-000"]};
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 
     > p strong {
       color: ${({ theme }) => theme["black-100"]};

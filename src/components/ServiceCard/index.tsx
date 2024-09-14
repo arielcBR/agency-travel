@@ -20,7 +20,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
         <h4>{service.name}</h4>
         <span>
           <p>
-            <strong>{formatter.currency(service.price)}</strong>/por pessoa
+            <strong>{formatter.currency(service.price)}</strong>/pessoa
           </p>
           <CustomLink to="#" text="Agendar" />
         </span>

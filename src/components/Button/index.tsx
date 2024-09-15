@@ -1,14 +1,10 @@
 import { ButtonContainer } from "./styles";
-import { LinkProps } from "react-router-dom";
+import { ButtonHTMLAttributes } from "react";
 
-interface ButtonProps extends LinkProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
 }
 
-export function Button({ text, to="#", ...rest }: ButtonProps) {
-  return (
-    <ButtonContainer to={to} {...rest}>
-      {text}
-    </ButtonContainer>
-  );
+export function Button({ text, ...rest }: ButtonProps) {
+  return <ButtonContainer {...rest}>{text}</ButtonContainer>;
 }

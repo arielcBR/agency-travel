@@ -5,6 +5,7 @@ import { OurServices } from '../../components/OurServices'
 import { AgencyInfo } from '../../components/AgencyInfo'
 import { OurStaff } from "../../components/OurStaff"
 import { Gallery } from '../../components/Gallery'
+import { Contact } from '../../components/Contact/'
 
 export function Home() {
     
@@ -16,6 +17,7 @@ export function Home() {
         <AgencyInfo />
         <Gallery />
         <OurStaff />
+        <Contact />
       </HomeContainer>
     )
 }

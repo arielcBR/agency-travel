@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-export const ButtonContainer = styled(Link)`
+export const ButtonContainer = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 
   background: ${({ theme }) => theme["brown-200"]};
+  border: none;
   border-radius: 6px;
   color: ${({ theme }) => theme.white};
   cursor: pointer;

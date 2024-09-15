@@ -5,6 +5,7 @@ export const AgencyInfoContainer = styled.section`
   flex-direction: column;
   gap: 5rem;
 
+  margin-bottom: 5rem;
   height: 100vh;
   width: 100%;
 

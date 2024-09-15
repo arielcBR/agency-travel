@@ -28,7 +28,7 @@ export const services = [
     description:
       "Visite Campanópolis, um tesouro medieval localizado a apenas 30 km de Buenos Aires, onde os sonhos ganham vida. Neste lugar encantado, a Idade Média é revivida através de construções antigas que farão você se sentir parte de um conto de fadas. Com bosques encantados, castelos majestosos, torres imponentes e casas que parecem ter saído de um livro mágico, Campanópolis é uma experiência única. Explore as casinhas encantadas no bosque, onde até a Cinderela pode aparecer a qualquer momento. Não deixe de visitar a parte mais colorida e extravagante, onde portas misteriosas ligam lugares mágicos e corujas de ferro e madeira observam com olhares curiosos. Este espaço lembra as obras vibrantes do mestre Gaudí! Deixe-se transportar para um universo medieval e surreal, onde a imaginação não tem limites. Campanópolis é mais do que um destino, é uma viagem à magia e ao encantamento. Venha e viva o sonho!",
     price: 199.9,
-    image: "campanopolis.png",
+    image: "campanopolis.jpg",
     city: "buenos aires",
   },
   {
@@ -44,7 +44,7 @@ export const services = [
     description:
       "O The Argentine Experience é uma aventura gastronômica verdadeiramente extraordinária! Prepare-se para embarcar em uma jornada culinária repleta de surpresas irresistíveis que vai transportar você para o mundo dos segredos culinários argentinos. Você terá a oportunidade de aprender a preparar e saborear as icônicas empanadas argentinas e desfrutar do lendário Bife de Lomo. Cada mordida é uma explosão de sabores que despertará seu desejo por mais. E não podemos esquecer do mate. Revelaremos os mistérios por trás deste passatempo nacional que vai além de ser apenas uma bebida, é uma tradição que envolve amizade e compartilhamento. Nossos chefs e guias especializados serão seus companheiros nessa jornada mágica, conduzindo você a explorar os sabores mais autênticos da Argentina. E a melhor parte vem agora: cada etapa dessa experiência será acompanhada por vinhos selecionados, que elevarão cada sabor a um nível surpreendente.",
     price: 879.9,
-    image: "argentine-experience.png",
+    image: "argentine-experience.jpg",
     city: "buenos aires",
   },
 ];

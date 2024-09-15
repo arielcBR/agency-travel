@@ -11,4 +11,5 @@ export const defaultTheme = {
   "gray-000": "#727272",
   "gray-100": "#DBD3DB",
   "gray-200": "#373737",
+  "gray-300": "#B6B6B6",
 } as const;

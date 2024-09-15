@@ -4,6 +4,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
 
+  border-bottom: 1px solid ${({ theme }) => theme["gray-300"]};
   height: 6rem;
   width: 100%;
 
@@ -36,8 +37,7 @@ export const Nav = styled.nav`
     }
 
     .active {
-      border-bottom: 3px solid ${({ theme }) => theme.white};
-      border-radius: 3px;
+      font-weight: 700;
     }
   }
 `;

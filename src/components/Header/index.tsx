@@ -28,10 +28,10 @@ export function Header() {
           </li>
         </ul>
       </Nav>
-      <SideNav>
+      {/* <SideNav>
         <ShoppingCart />
         <User weight="fill" />
-      </SideNav>
+      </SideNav> */}
     </HeaderContainer>
   );
 }

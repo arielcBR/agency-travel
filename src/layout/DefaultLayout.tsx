@@ -1,3 +1,4 @@
+import { Footer } from "../components/Footer";
 import { Content, LayoutContainer } from "./styles";
 import { Outlet } from "react-router-dom";
 
@@ -7,6 +8,7 @@ export function DefaultLayout() {
       <Content>
         <Outlet />
       </Content>
+      <Footer />
     </LayoutContainer>
   );
 }

@@ -1,5 +1,4 @@
 import { ServiceCardContainer, ImageHeader, ServiceBody } from "./styles";
-import { CustomLink } from "../CustomLink";
 import { formatter } from "../../utils/Formatter";
 
 export interface ServiceCardData {
@@ -22,7 +21,6 @@ export function ServiceCard({ service }: ServiceCardProps) {
           <p>
             <strong>{formatter.currency(service.price)}</strong>/pessoa
           </p>
-          <CustomLink to="#" text="Agendar" />
         </span>
       </ServiceBody>
     </ServiceCardContainer>

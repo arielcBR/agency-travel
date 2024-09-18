@@ -6,7 +6,6 @@ export const OurStaffContainer = styled.section`
   gap: 6rem;
 
   margin-bottom: 6rem;
-  height: 100vh;
   width: 100%;
 `;
 

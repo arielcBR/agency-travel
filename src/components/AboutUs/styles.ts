@@ -6,8 +6,7 @@ export const AboutUsContainer = styled.section`
   justify-content: space-between;
   gap: 7.5rem;
 
-  margin-top: 5rem;
-  height: 100vh;
+  margin-bottom: 8rem;
 
   > img {
     border-radius: 10px;

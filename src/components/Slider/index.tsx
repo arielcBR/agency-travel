@@ -53,7 +53,7 @@ export function Slider({ slides }: SliderProps) {
             spaceBetween: 100,
           },
           [parseInt(DEVICE_BREAKPOINT.XL)]: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 10,
           },
         }}

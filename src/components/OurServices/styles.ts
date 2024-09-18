@@ -4,12 +4,19 @@ export const OurServicesContainer = styled.section`
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  
+  > h3 {
+    color: ${({ theme }) => theme.black};
+    font-family: Montserrat, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
 `;
 
 export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 4rem;
 
   text-align: justify;
 
@@ -21,16 +28,21 @@ export const HeaderContent = styled.div`
 
     height: 100%;
 
-    > h3 {
-      color: ${({ theme }) => theme.black};
-      font-family: Montserrat, sans-serif;
-      font-size: 3.5rem;
-      font-weight: 600;
-    }
 
-    > a {
-      height: 5rem;
-      width: 19rem;
+    > div {
+      > h4 {
+        margin-bottom: 1rem;
+      }
+
+      > ul {
+        > li {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          margin-bottom: 0.5rem;
+        }
+      }
     }
   }
 `;

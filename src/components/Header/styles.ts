@@ -40,22 +40,4 @@ export const Nav = styled.nav`
       font-weight: 700;
     }
   }
-`;
-
-export const SideNav = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3.2rem;
-
-  > svg {
-    color: ${({ theme }) => theme.white};
-    cursor: pointer;
-    height: 2.5rem;
-    width: 2.5rem;
-
-    :hover {
-      color: ${({ theme }) => theme["gray-100"]};
-    }
-  }
-`;
+`

@@ -35,11 +35,22 @@ export function AgencyInfo() {
             }}
             key={uuidv4()}
           />
+          <BenefitItem
+            benefit={{
+              advantage: "Suporte 24h",
+              description:
+                "Com nosso suporte 24h, você viaja sem preocupações! Estamos sempre à disposição para ajudar em qualquer situação, a qualquer hora, onde quer que esteja.",
+            }}
+            key={uuidv4()}
+          />
         </BenefitsWrapper>
 
         <ImageContainer>
           <img src={casaRosadaImage} alt="jardim japonês em buenos aires" />
-          <img src={floralisImage} alt="antigo palacio de aguas em buenos aires" />
+          <img
+            src={floralisImage}
+            alt="antigo palacio de aguas em buenos aires"
+          />
         </ImageContainer>
       </div>
     </AgencyInfoContainer>

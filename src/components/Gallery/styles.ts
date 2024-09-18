@@ -5,7 +5,6 @@ export const GalleryContainer = styled.section`
   flex-direction: column;
 
   margin-bottom: 5rem;
-  height: 100vh;
 `;
 
 export const GalleryHeader = styled.div`
@@ -42,7 +41,6 @@ export const GalleryImages = styled.div`
   gap: 0.25rem;
 
   overflow: hidden;
-  width: 100vw;
 
   > img {
     border-radius: 5px;

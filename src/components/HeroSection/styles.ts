@@ -8,6 +8,7 @@ export const HeroSectionContainer = styled.section`
   height: 100vh;
   width: 100%;
 
+  margin-bottom: 8rem;
   position: relative;
 
   > main {

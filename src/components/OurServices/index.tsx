@@ -3,19 +3,42 @@ import {
   HeaderContent,
   InfoContent,
   Carrousel,
-} from "./styles"
-import { Button } from "../Button"
-import { Slider } from '../Slider'
+} from "./styles";
+import { Slider } from "../Slider";
+import { CheckFat } from "@phosphor-icons/react";
 
-import { services } from '../../mocks/listOfServices'
+import { services } from "../../mocks/listOfServices";
 
 export function OurServices() {
   return (
     <OurServicesContainer className="container">
+      <h3>Venha conhecer Buenos Aires conosco</h3>
       <HeaderContent>
         <div>
-          <h3>Venha conhecer Buenos Aires conosco</h3>
-          <Button to="#" text="Explorar" />
+          <div>
+            <h4>Serviços oferecidos:</h4>
+            <ul>
+              <li>
+                <CheckFat size={20} weight="fill" />
+                <span>City tours</span>
+              </li>
+              <li>
+                <CheckFat size={20} weight="fill" />
+                <span>Translados</span>
+              </li>
+              <li>
+                <CheckFat size={20} weight="fill" />
+                <span>Câmbio com excelente cotação</span>
+              </li>
+              <li>
+                <CheckFat size={20} weight="fill" />
+                <span>
+                  Kit de sobrevivência (cartão de transporte público, chip com internet
+                  e câmbio)
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
         <InfoContent>
           <p>

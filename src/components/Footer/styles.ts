@@ -81,8 +81,6 @@ export const FooterMap = styled(FooterBase)``;
 
 export const FooterPolicies = styled(FooterBase)``;
 
-
-
 export const SocialNetworks = styled.div`
   display: flex;
   align-items: center;
@@ -114,11 +112,16 @@ export const FooterBottom = styled.div`
     border-top: 1px solid ${({ theme }) => theme.white};
     padding-top: 1rem;
   }
-  
+
   > div {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+
+  }
+
+  a {
+    color: ${({ theme }) => theme.white};
   }
 `;

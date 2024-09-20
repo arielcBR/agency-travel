@@ -21,17 +21,19 @@ export const IconWrapper = styled.div`
     border-radius: 10px;
     height: 3.6rem;
     width: 3.6rem;
-
+    
     > svg {
       height: 2rem;
       width: 2rem;
     }
   }
-
+  
   > div:last-child {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
+    white-space: nowrap;
 
     > p:nth-child(1) {
       color: ${({ theme }) => theme["gray-400"]};
@@ -39,7 +41,7 @@ export const IconWrapper = styled.div`
       font-weight: 400;
     }
 
-    > p:nth-child(2) {
+    > a {
       color: ${({ theme }) => theme.white};
       font-size: 1.5rem;
       font-weight: 500;

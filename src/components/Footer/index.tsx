@@ -1,5 +1,4 @@
 import {
-  BracketsCurly,
   FacebookLogo,
   InstagramLogo,
   WhatsappLogo,
@@ -28,8 +27,10 @@ export function Footer() {
             <span>Seu guia</span>
           </LogoWrapper>
           <p>
-            Seu Guia é uma agência de turismo líder na região em Buenos Aires. Com anos de experiência, nós nos especializamos em
-            organizar passeios e excursões personalizados para indivíduos, famílias e grupos.
+            Seu Guia é uma agência de turismo líder na região em Buenos Aires.
+            Com anos de experiência, nós nos especializamos em organizar
+            passeios e excursões personalizados para indivíduos, famílias e
+            grupos.
           </p>
           <SocialNetworks>
             <span>Follow Us</span>
@@ -76,9 +77,11 @@ export function Footer() {
         <p>Seu Guia ©Copyright 2024. All rights reserved. </p>
         <div>
           <p>
-            Desenvolvido por <span>arielcBr</span>
+            Desenvolvido por{" "}
+            <a target="_blank" href="https://www.linkedin.com/in/campos-ariel/">
+              arielcBr
+            </a>
           </p>
-          <BracketsCurly />
         </div>
       </FooterBottom>
     </FooterContainer>

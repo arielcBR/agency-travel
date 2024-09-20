@@ -11,7 +11,7 @@ export function FooterContact() {
         </div>
         <div>
           <p>Telefone</p>
-          <p>+54 911 36684512</p>
+          <a href="tel:+5491136684512">+54 911 36684512</a>
         </div>
       </IconWrapper>
       <IconWrapper>
@@ -20,7 +20,7 @@ export function FooterContact() {
         </div>
         <div>
           <p>Email</p>
-          <p>seuguia@contato.com</p>
+          <a href="mailto:seuguia@contato.com">seuguia@contato.com</a>
         </div>
       </IconWrapper>
       <IconWrapper>
@@ -29,7 +29,9 @@ export function FooterContact() {
         </div>
         <div>
           <p>Escritório</p>
-          <p>Av. de Mayo 1370, C1085 CABA</p>
+          <a target="_blank" href="https://maps.app.goo.gl/9UK263uqp4qk4iEf7">
+            Av. de Mayo 1370, CABA
+          </a>
         </div>
       </IconWrapper>
     </FooterContactContainer>

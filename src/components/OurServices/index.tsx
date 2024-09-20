@@ -28,14 +28,13 @@ export function OurServices() {
               </li>
               <li>
                 <CheckFat size={20} weight="fill" />
-                <span>Câmbio com excelente cotação</span>
+                <span>
+                  Kit de sobrevivência (cartão SUBE e SIM 4G)
+                </span>
               </li>
               <li>
                 <CheckFat size={20} weight="fill" />
-                <span>
-                  Kit de sobrevivência (cartão de transporte público, chip com internet
-                  e câmbio)
-                </span>
+                <span>Câmbio com excelente cotação</span>
               </li>
             </ul>
           </div>

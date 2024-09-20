@@ -5,6 +5,7 @@ import { OurServices } from "../../components/OurServices";
 import { AgencyInfo } from "../../components/AgencyInfo";
 import { OurStaff } from "../../components/OurStaff";
 import { Gallery } from "../../components/Gallery";
+import { WhatsappButton } from "../../components/WhatsappButton";
 
 export function Home() {
   return (
@@ -15,6 +16,7 @@ export function Home() {
       <AgencyInfo />
       <Gallery />
       <OurStaff />
+      <WhatsappButton />
     </HomeContainer>
   );
 }

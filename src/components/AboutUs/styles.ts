@@ -49,4 +49,20 @@ export const AboutUsContainer = styled.section`
       width: 50%;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    gap: 2.5rem;
+
+    > div {
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+
+    > div div {
+      > p {
+        font-size: 1.5rem;
+      }
+    }
+  }
 `;

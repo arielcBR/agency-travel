@@ -8,6 +8,12 @@ export const FooterContainer = styled.footer`
   padding-top: 5rem;
   padding-bottom: 2rem;
   width: 100%;
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    p a {
+      font-size: 1.4rem;
+    }
+  }
 `;
 
 export const FooterBody = styled.div`

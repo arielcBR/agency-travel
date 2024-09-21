@@ -40,4 +40,4 @@ export const Nav = styled.nav`
       font-weight: 700;
     }
   }
-`
+`;

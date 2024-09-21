@@ -1,10 +1,23 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 
 export const GalleryContainer = styled.section`
   display: flex;
   flex-direction: column;
 
   margin-bottom: 5rem;
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    .hide {
+      display: none;
+    }
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINT.LG}) {
+    .hide {
+      display: inline;
+    }
+  }
 `;
 
 export const GalleryHeader = styled.div`
@@ -32,14 +45,28 @@ export const GalleryHeader = styled.div`
       font-style: italic;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    > h3 {
+      font-size: 2.5rem;
+    }
+
+    > p {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const GalleryImages = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(0, 1fr)
+  ); 
   gap: 0.25rem;
+  align-items: center; 
 
+  width: 100%; 
   overflow: hidden;
 
   > img {
@@ -48,11 +75,10 @@ export const GalleryImages = styled.div`
     height: 25rem;
     object-fit: cover;
     object-position: center;
-    width: 20%;
+    width: 100%; 
   }
 
   > img:nth-of-type(3) {
-    border-radius: 5px;
-    height: 30rem;
+    height: 30rem; 
   }
 `;

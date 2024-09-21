@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 
 export const OurStaffContainer = styled.section`
   display: flex;
@@ -21,8 +22,23 @@ export const CardHeader = styled.div`
   > h4 {
     color: ${({ theme }) => theme.black};
     font-family: Montserrat, sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
+    white-space: nowrap;
+  }
+
+  > p {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    > p {
+      font-size: 1.5rem;
+    }
+
+    > h4 {
+      font-size: 2.5rem;
+    }
   }
 `;
 
@@ -30,19 +46,35 @@ export const Staff = styled.div`
   display: grid;
   grid-template-columns: 45% 27.5% 27.5%;
   column-gap: 2.5rem;
-  justify-content: space-between;
 
+  overflow-x: hidden;
   height: 39rem;
+  max-width: 100%;
   width: 100%;
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    & {
+      grid-template-columns: 35% 30% 32.5%;
+      column-gap: 1rem;
+    }
+  }
 `;
 
+
 export const StafCardfWithDescription = styled.div`
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 0;
 
   border-radius: 10px;
   overflow: hidden;
   height: 100%;
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    & {
+      grid-template-columns: 40% 60%;
+    }
+  }
 `;
 
 interface CardImageProps {
@@ -55,14 +87,15 @@ export const CardImage = styled.div<CardImageProps>`
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
-  width: 50%;
+  width: 100%;
 `;
 
 export const CardDescription = styled.div`
   background-color: ${({ theme }) => theme["brown-200"]};
   padding: 1.9rem 1rem;
+  text-align: justify;
   height: 100%;
-  width: 50%;
+  width: 100%;
 
   > h4 {
     color: ${({ theme }) => theme.white};

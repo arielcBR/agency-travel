@@ -71,4 +71,10 @@ export const ServiceBody = styled.div`
       font-size: 1.2rem;
     }
   }
+  
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    > h4 {
+      font-size: 1.5rem;
+    }
+  }
 `;

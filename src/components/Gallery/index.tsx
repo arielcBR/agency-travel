@@ -19,11 +19,11 @@ export function Gallery() {
         </p>
       </GalleryHeader>
       <GalleryImages>
+        <img className="hide" src={facultadIngenieria} alt="" />
         <img src={palacioBarolo} alt="" />
-        <img src={facultadIngenieria} alt="" />
         <img src={puertoMadero} alt="" />
         <img src={rosedal} alt="" />
-        <img src={facultadDerecho} alt="" />
+        <img className="hide" src={facultadDerecho} alt="" />
       </GalleryImages>
     </GalleryContainer>
   );

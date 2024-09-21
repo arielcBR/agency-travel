@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { DEVICE_BREAKPOINT } from "./devicesBreakpoint";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -42,5 +43,11 @@ export const GlobalStyle = createGlobalStyle`
 
   .container {
     padding: 0 12.5%;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    .container {
+    padding: 0 5%;
+  }
   }
 `;

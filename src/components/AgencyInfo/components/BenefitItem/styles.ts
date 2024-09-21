@@ -35,6 +35,19 @@ export const BenefitItemContainer = styled.div`
       width: 5.5rem;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    > div {
+      height: 2.4rem;
+      width: 4.4rem;
+    }
+
+    > svg {
+      padding: 0.2rem;
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+  }
 `;
 
 export const BenefitTitle = styled.h4`
@@ -43,6 +56,12 @@ export const BenefitTitle = styled.h4`
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1.3rem;
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    & {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const BenefitDescription = styled.p`
@@ -50,4 +69,10 @@ export const BenefitDescription = styled.p`
   font-family: Poppins, sans-serif;
   font-size: 1.5rem;
   text-align: justify;
+
+  @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
+    & {
+      font-size: 1.25rem;
+    }
+  }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 
 export const FooterContainer = styled.footer`
   background-color: ${({ theme }) => theme["brown-200"]};
@@ -13,10 +14,15 @@ export const FooterBody = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1.5fr;
   grid-template-rows: 1fr;
-  gap: 8rem;
+  grid-column-gap: 8rem;
   justify-content: space-between;
 
   margin-bottom: 3rem;
+
+  @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
+    grid-template-columns: 2.25fr 1fr 1fr 1.5fr;
+    grid-column-gap: 2.5rem;
+  }
 `;
 
 export const LogoWrapper = styled.div`
@@ -96,7 +102,13 @@ export const SocialNetworks = styled.div`
     font-weight: 500;
   }
 
-  > svg {
+  > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  > a svg {
     fill: ${({ theme }) => theme.white};
     height: 2.5rem;
     width: 2.5rem;

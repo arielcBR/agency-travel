@@ -8,16 +8,16 @@ export function Header() {
       <Nav>
         <ul>
           <li>
-            <a href="#">Sobre</a>
+            <a href="#aboutUs">Sobre</a>
           </li>
           <li>
-            <a href="#">Nossos tours</a>
+            <a href="#tours">Nossos tours</a>
           </li>
           <li>
-            <a href="#">Guias</a>
+            <a href="#staff">Guias</a>
           </li>
           <li>
-            <a href="#">Outros serviços</a>
+            <a href="#ourServices">Outros serviços</a>
           </li>
         </ul>
       </Nav>

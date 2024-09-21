@@ -3,7 +3,7 @@ import obeliscoImage from "../../assets/images/obelisco.jpg";
 
 export function AboutUs() {
   return (
-    <AboutUsContainer className="container">
+    <AboutUsContainer id="aboutUs" className="container">
       <img
         src={obeliscoImage}
         alt="Monumento obelisco cercado de árvores com flores violetas"

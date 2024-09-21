@@ -11,7 +11,7 @@ import { services } from "../../mocks/listOfServices";
 
 export function OurServices() {
   return (
-    <OurServicesContainer className="container">
+    <OurServicesContainer id="ourServices" className="container">
       <h3>Venha conhecer Buenos Aires conosco</h3>
       <HeaderContent>
         <div>
@@ -28,9 +28,7 @@ export function OurServices() {
               </li>
               <li>
                 <CheckFat size={20} weight="fill" />
-                <span>
-                  Kit de sobrevivência (cartão SUBE e SIM 4G)
-                </span>
+                <span>Kit de sobrevivência (cartão SUBE e SIM 4G)</span>
               </li>
               <li>
                 <CheckFat size={20} weight="fill" />
@@ -54,7 +52,8 @@ export function OurServices() {
         </InfoContent>
       </HeaderContent>
 
-      <Carrousel>
+      <Carrousel id="tours">
+        <h3>Nossos tours </h3>
         <Slider slides={services} />
       </Carrousel>
     </OurServicesContainer>

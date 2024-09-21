@@ -1,6 +1,6 @@
 import { WhatsappButtonContainer } from "./styles";
 
-const whatsappLink =
+export const whatsappLink =
   "https://api.whatsapp.com/message/PSFWVW3TPLQXF1?autoload=1";
 
 export function WhatsappButton() {

@@ -19,6 +19,7 @@ interface SliderProps {
 }
 
 export function Slider({ slides }: SliderProps) {
+
   return (
     <CarouselContainer>
       <StyledSwiper
@@ -50,10 +51,10 @@ export function Slider({ slides }: SliderProps) {
           },
           [parseInt(DEVICE_BREAKPOINT.LG)]: {
             slidesPerView: 3,
-            spaceBetween: 100,
+            spaceBetween: 25,
           },
           [parseInt(DEVICE_BREAKPOINT.XL)]: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 10,
           },
         }}

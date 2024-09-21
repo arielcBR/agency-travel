@@ -7,7 +7,7 @@ import floralisImage from "../../assets/images/floralis.jpg"
 
 export function AgencyInfo() {
   return (
-    <AgencyInfoContainer className="container">
+    <AgencyInfoContainer id="" className="container">
       <h4>O que você vai encontrar com a gente</h4>
       <div>
         <BenefitsWrapper>

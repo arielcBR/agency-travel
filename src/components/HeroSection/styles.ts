@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import imageBg from "../../assets/images/caminito.jpg";
+import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 
 export const HeroSectionContainer = styled.section`
   background-image: url(${imageBg});
@@ -14,7 +15,6 @@ export const HeroSectionContainer = styled.section`
   > main {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     gap: 3.7rem;
 
     color: ${({ theme }) => theme.white};
@@ -37,6 +37,20 @@ export const HeroSectionContainer = styled.section`
       font-weight: 700;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
         1px 1px 0 #000;
+    }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
+    > main {
+      gap: 2rem;
+
+      > h1 {
+        font-size: clamp(5rem, 15vw, 7rem);
+      }
+
+      > p {
+        font-size: clamp(1.3rem, 15vw, 1.8rem);
+      }
     }
   }
 `;

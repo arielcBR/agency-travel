@@ -41,6 +41,11 @@ export const HeaderContent = styled.div`
           gap: 1rem;
 
           margin-bottom: 0.5rem;
+
+          > svg { 
+            height: 20px;
+            width: 20px;
+          }
         }
       }
     }
@@ -57,4 +62,13 @@ export const InfoContent = styled.div`
   font-size: 1.7rem;
   width: 60%;
 `;
-export const Carrousel = styled.div``;
+export const Carrousel = styled.div`
+  > h3 {
+    color: ${({ theme }) => theme.black};
+    font-family: Montserrat, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+`;

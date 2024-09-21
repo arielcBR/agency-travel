@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 
 export const AboutUsContainer = styled.section`
   display: flex;
@@ -37,6 +38,15 @@ export const AboutUsContainer = styled.section`
         font-size: 1.7rem;
         text-align: justify;
       }
+    }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
+    gap: 4rem;
+
+    > img {
+      border-radius: 10px;
+      width: 50%;
     }
   }
 `;

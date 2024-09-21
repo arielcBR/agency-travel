@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 
 export const ServiceCardContainer = styled.div`
   display: flex;
@@ -11,6 +12,12 @@ export const ServiceCardContainer = styled.div`
   min-width: 18rem;
   max-width: 24rem;
   width: 80vw;
+
+  @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
+    & {
+      height: 35rem;
+    }
+  }
 `;
 
 interface ImageHeaderProps {
@@ -42,9 +49,9 @@ export const ServiceBody = styled.div`
     font-size: 2rem;
     margin-bottom: 2rem;
     text-transform: capitalize;
-    overflow: hidden; 
+    overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; 
+    white-space: nowrap;
   }
 
   > span {

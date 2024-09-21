@@ -16,6 +16,8 @@ import {
   SocialNetworks,
 } from "./styles";
 import { FooterContact } from "./Components/FooterContact";
+import { Link } from "react-router-dom";
+import { whatsappLink } from "../WhatsappButton";
 
 export function Footer() {
   return (
@@ -34,10 +36,21 @@ export function Footer() {
           </p>
           <SocialNetworks>
             <span>Follow Us</span>
-            <XLogo weight="fill" />
-            <InstagramLogo />
-            <FacebookLogo />
-            <WhatsappLogo />
+            <Link to="#" target="_blank">
+              <XLogo weight="fill" />
+            </Link>
+            <Link to="#" target="_blank">
+              <FacebookLogo weight="fill" />
+            </Link>
+            <Link
+              to="https://www.instagram.com/seu_guia_completo/"
+              target="_blank"
+            >
+              <InstagramLogo />
+            </Link>
+            <Link to={whatsappLink} target="_blank">
+              <WhatsappLogo />
+            </Link>
           </SocialNetworks>
         </FooterDescription>
         <FooterMap>
@@ -79,7 +92,7 @@ export function Footer() {
           <p>
             Desenvolvido por{" "}
             <a target="_blank" href="https://www.linkedin.com/in/campos-ariel/">
-              arielcBr
+              arielc.
             </a>
           </p>
         </div>

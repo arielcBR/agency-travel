@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 
 export const AgencyInfoContainer = styled.section`
   display: flex;
@@ -20,7 +21,12 @@ export const AgencyInfoContainer = styled.section`
     grid-template-columns: 1fr 60rem;
     grid-template-rows: 100%;
     column-gap: 2rem;
+  }
 
+  @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
+    > div {
+      grid-template-columns: 1fr 40rem;
+    }
   }
 `;
 
@@ -47,9 +53,21 @@ export const ImageContainer = styled.div`
 
   > img:last-of-type {
     align-self: flex-start;
-    
+
     border: 4px solid ${({ theme }) => theme.white};
-    margin-top: -5rem;    
+    margin-top: -5rem;
     z-index: 10;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
+    > img {
+      border-radius: 15px;
+      height: 20rem;
+      width: 28rem;
+    }
+
+    > img:last-of-type {
+      margin-top: -3rem;
+    }
   }
 `;

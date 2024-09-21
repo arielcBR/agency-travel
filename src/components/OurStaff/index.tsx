@@ -13,7 +13,7 @@ import eduardoPassosGuide from "../../assets/images/eduardo-passos.jpg";
 
 export function OurStaff() {
   return (
-    <OurStaffContainer className="container">
+    <OurStaffContainer id="staff" className="container">
       <CardHeader>
         <h4>Nossa equipe especializada</h4>
         <p>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINT } from "../../../../styles/devicesBreakpoint";
 
 export const BenefitItemContainer = styled.div`
   display: flex;
@@ -25,6 +26,13 @@ export const BenefitItemContainer = styled.div`
       padding: 0.25rem;
       height: 2rem;
       width: 2rem;
+    }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
+    > div {
+      height: 3rem;
+      width: 5.5rem;
     }
   }
 `;

@@ -11,12 +11,12 @@ export function Home() {
   return (
     <HomeContainer>
       <HeroSection />
-      <AboutUs />
-      <OurServices />
-      <AgencyInfo />
-      <Gallery />
-      <OurStaff />
-      <WhatsappButton />
+      {/* <AboutUs /> */}
+      {/* <OurServices /> */}
+      {/* <AgencyInfo /> */}
+      {/* <Gallery /> */}
+      {/* <OurStaff /> */}
+      {/* <WhatsappButton /> */}
     </HomeContainer>
   );
 }

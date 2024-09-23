@@ -9,9 +9,19 @@ export const FooterContainer = styled.footer`
   padding-bottom: 2rem;
   width: 100%;
 
+  .isVisible {
+    display: flex;
+  }
+
   @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
-    p a {
+    > p a {
       font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    .isVisible {
+      display: none;
     }
   }
 `;
@@ -23,11 +33,17 @@ export const FooterBody = styled.div`
   grid-column-gap: 8rem;
   justify-content: space-between;
 
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 
   @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
     grid-template-columns: 2.25fr 1fr 1fr 1.5fr;
     grid-column-gap: 2.5rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.MD}) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1.5rem;
   }
 `;
 
@@ -42,6 +58,12 @@ export const LogoWrapper = styled.div`
     font-size: 1.7rem;
     font-weight: 600;
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.MD}) {
+    & {
+      align-self: center;
+    }
+  }
 `;
 
 export const FooterDescription = styled.div`
@@ -55,6 +77,14 @@ export const FooterDescription = styled.div`
 
   > p {
     margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.MD}) {
+    gap: 1rem;
+
+    > p {
+      text-align: justify;
+    }
   }
 `;
 
@@ -87,6 +117,16 @@ export const FooterBase = styled.div`
       }
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.MD}) {
+    & {
+      margin-bottom: 2rem;
+    }
+    > span,
+    li {
+      align-self: center;
+    }
+  }
 `;
 
 export const FooterMap = styled(FooterBase)``;
@@ -99,7 +139,7 @@ export const SocialNetworks = styled.div`
   justify-content: flex-start;
   gap: 1.25rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   > span {
     color: ${({ theme }) => theme.white};
@@ -112,12 +152,18 @@ export const SocialNetworks = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-  } 
+  }
 
   > a svg {
     fill: ${({ theme }) => theme.white};
     height: 2.5rem;
     width: 2.5rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.MD}) {
+    & {
+      align-self: center;
+    }
   }
 `;
 
@@ -136,7 +182,6 @@ export const FooterBottom = styled.div`
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-
   }
 
   a {

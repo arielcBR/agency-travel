@@ -28,7 +28,7 @@ export function Footer() {
             <Logo />
             <span>Seu guia</span>
           </LogoWrapper>
-          <p>
+          <p className="isVisible">
             Seu Guia é uma agência de turismo líder na região em Buenos Aires.
             Com anos de experiência, nós nos especializamos em organizar
             passeios e excursões personalizados para indivíduos, famílias e
@@ -53,7 +53,7 @@ export function Footer() {
             </Link>
           </SocialNetworks>
         </FooterDescription>
-        <FooterMap>
+        <FooterMap className="isVisible">
           <span>Company</span>
           <ul>
             <li>
@@ -70,7 +70,7 @@ export function Footer() {
             </li>
           </ul>
         </FooterMap>
-        <FooterPolicies>
+        <FooterPolicies className="isVisible">
           <span>Suporte</span>
           <ul>
             <li>

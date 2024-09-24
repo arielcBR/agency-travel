@@ -1,17 +1,28 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 
 export const HeaderContainer = styled.header`
+  height: 6rem;
+  width: 100%;
+`;
+
+export const HeaderDesktop = styled.div`
   display: flex;
   align-items: center;
 
   border-bottom: 1px solid ${({ theme }) => theme["gray-300"]};
-  height: 6rem;
   width: 100%;
 
   > img {
     margin-right: 5.6rem;
     height: 3.2rem;
     width: 3.2rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    & {
+      display: none;
+    }
   }
 `;
 
@@ -35,9 +46,21 @@ export const Nav = styled.nav`
     :hover {
       color: ${({ theme }) => theme["gray-100"]};
     }
+  }
+`;
 
-    .active {
-      font-weight: 700;
-    }
+export const HeaderMobile = styled.div`
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+
+  > div {
+    width: 50%;
+  }
+
+  svg, img {
+    color: ${({ theme }) => theme.white};
+    height: 3rem;
+    width: 3rem;
   }
 `;

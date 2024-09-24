@@ -1,5 +1,5 @@
-import { Header } from "../Header";
 import { HeroSectionContainer } from "./styles";
+import { Header } from "../Header";
 
 export function HeroSection() {
   return (

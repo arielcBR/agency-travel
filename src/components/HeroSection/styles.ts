@@ -67,4 +67,20 @@ export const HeroSectionContainer = styled.section`
       }
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    > main {
+      gap: 2rem;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+
+      > h1 {
+        font-size: clamp(3rem, 15vw, 5rem);
+      }
+
+      > p {
+        font-size: clamp(1rem, 15vw, 1.3rem);
+      }
+    }
+  }
 `;

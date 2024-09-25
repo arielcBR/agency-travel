@@ -38,12 +38,12 @@ export function Slider({ slides }: SliderProps) {
         }}
         breakpoints={{
           [parseInt(DEVICE_BREAKPOINT.XS)]: {
-            slidesPerView: 1,
-            spaceBetween: 110,
+            slidesPerView: 2,
+            spaceBetween: 160,
           },
           [parseInt(DEVICE_BREAKPOINT.SM)]: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 120,
           },
           [parseInt(DEVICE_BREAKPOINT.MD)]: {
             slidesPerView: 3,

@@ -14,7 +14,7 @@ export function OurServices() {
     <OurServicesContainer id="ourServices" className="container">
       <h3>Venha conhecer Buenos Aires conosco</h3>
       <HeaderContent>
-        <div>
+        <div className="servicesContent">
           <div>
             <h4>Serviços oferecidos:</h4>
             <ul>
@@ -51,7 +51,6 @@ export function OurServices() {
           </p>
         </InfoContent>
       </HeaderContent>
-
       <Carrousel id="tours">
         <h3>Nossos tours </h3>
         <Slider slides={services} />

@@ -29,7 +29,7 @@ export const HeaderContent = styled.div`
 
   text-align: justify;
 
-  > div {
+  > .servicesContent {
     display: flex;
     flex-direction: column;
     gap: 6.8rem;
@@ -70,6 +70,12 @@ export const HeaderContent = styled.div`
       font-size: 1.3rem;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    & {
+      flex-direction: column;
+    }
+  }
 `;
 
 export const InfoContent = styled.div`
@@ -87,6 +93,10 @@ export const InfoContent = styled.div`
       gap: 2rem;
       font-size: 1.5rem;
     }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    width: 100%;
   }
 `;
 export const Carrousel = styled.div`

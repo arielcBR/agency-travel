@@ -12,7 +12,7 @@ export function Home() {
     <HomeContainer>
       <HeroSection />
       <AboutUs />
-      {/* <OurServices /> */}
+      <OurServices />
       {/* <AgencyInfo /> */}
       {/* <Gallery /> */}
       {/* <OurStaff /> */}

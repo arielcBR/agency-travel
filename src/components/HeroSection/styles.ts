@@ -71,16 +71,24 @@ export const HeroSectionContainer = styled.section`
   @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
     > main {
       gap: 2rem;
-      white-space: pre-wrap;
-      word-wrap: break-word;
+      width: 100%;
 
       > h1 {
-        font-size: clamp(3rem, 15vw, 5rem);
+        font-size: clamp(3rem, 15vw, 3.5rem);
       }
 
       > p {
-        font-size: clamp(1rem, 15vw, 1.3rem);
+        font-size: clamp(1rem, 15vw, 1.2rem);
       }
+    }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.XS}) {
+    > main {
+      > h1, p {
+        text-align: center;
+      }
+
     }
   }
 `;

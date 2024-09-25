@@ -9,8 +9,7 @@ export function HeroSection() {
         <h1>Explore Buenos Aires</h1>
         <p>
           Nosso mundo é incrivelmente belo, com uma rica diversidade de
-          paisagens, culturas e vida selvagem. Siga-nos para aproveitar esses
-          momentos.
+          paisagens, culturas e vida selvagem
         </p>
       </main>
     </HeroSectionContainer>

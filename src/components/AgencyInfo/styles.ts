@@ -28,6 +28,14 @@ export const AgencyInfoContainer = styled.section`
       grid-template-columns: 1fr 40rem;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    > div {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      row-gap: 1rem;
+    }
+  }
 `;
 
 export const BenefitsWrapper = styled.div`

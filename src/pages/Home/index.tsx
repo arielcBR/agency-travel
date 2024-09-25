@@ -13,7 +13,7 @@ export function Home() {
       <HeroSection />
       <AboutUs />
       <OurServices />
-      {/* <AgencyInfo /> */}
+      <AgencyInfo />
       {/* <Gallery /> */}
       {/* <OurStaff /> */}
       {/* <WhatsappButton /> */}

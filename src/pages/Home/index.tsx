@@ -11,7 +11,7 @@ export function Home() {
   return (
     <HomeContainer>
       <HeroSection />
-      {/* <AboutUs /> */}
+      <AboutUs />
       {/* <OurServices /> */}
       {/* <AgencyInfo /> */}
       {/* <Gallery /> */}

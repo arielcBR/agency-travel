@@ -14,7 +14,7 @@ export function Home() {
       <AboutUs />
       <OurServices />
       <AgencyInfo />
-      {/* <Gallery /> */}
+      <Gallery />
       <OurStaff />
       {/* <WhatsappButton /> */}
     </HomeContainer>

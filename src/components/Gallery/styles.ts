@@ -55,6 +55,10 @@ export const GalleryHeader = styled.div`
       font-size: 1.5rem;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    width: 100%;
+  }
 `;
 
 export const GalleryImages = styled.div`

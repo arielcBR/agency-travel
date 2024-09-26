@@ -15,7 +15,7 @@ export function Home() {
       <OurServices />
       <AgencyInfo />
       {/* <Gallery /> */}
-      {/* <OurStaff /> */}
+      <OurStaff />
       {/* <WhatsappButton /> */}
     </HomeContainer>
   );

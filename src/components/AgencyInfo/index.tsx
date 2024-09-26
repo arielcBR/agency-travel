@@ -46,11 +46,11 @@ export function AgencyInfo() {
         </BenefitsWrapper>
 
         <ImageContainer>
-          <img src={casaRosadaImage} alt="jardim japonês em buenos aires" />
           <img
             src={floralisImage}
             alt="antigo palacio de aguas em buenos aires"
           />
+          <img src={casaRosadaImage} alt="jardim japonês em buenos aires" />
         </ImageContainer>
       </div>
     </AgencyInfoContainer>

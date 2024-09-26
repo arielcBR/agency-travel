@@ -78,4 +78,16 @@ export const ImageContainer = styled.div`
       margin-top: -3rem;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    > img {
+      border-radius: 15px;
+      height: 16rem;
+      width: 22rem;
+    }
+
+    > img:last-of-type {
+      margin-top: -3rem;
+    }
+  }
 `;

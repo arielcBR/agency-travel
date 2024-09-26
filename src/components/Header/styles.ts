@@ -34,7 +34,7 @@ export const Nav = styled.nav`
 
     > li {
       display: inline-block;
-      padding: 0.5rem 0;
+      padding: 1.5rem 0;
 
       > a {
         color: ${({ theme }) => theme.white};
@@ -58,9 +58,16 @@ export const HeaderMobile = styled.div`
     width: 50%;
   }
 
-  svg, img {
+  svg,
+  img {
     color: ${({ theme }) => theme.white};
     height: 3rem;
     width: 3rem;
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINT.LG}) {
+    & {
+      display: none;
+    }
   }
 `;

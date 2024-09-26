@@ -40,11 +40,15 @@ export const CardHeader = styled.div`
       font-size: 2.5rem;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    width: 100%;
+  }
 `;
 
 export const Staff = styled.div`
   display: grid;
-  grid-template-columns: 45% 27.5% 27.5%;
+  grid-template-columns: 45% 25% 25%;
   column-gap: 2.5rem;
 
   overflow-x: hidden;
@@ -58,6 +62,14 @@ export const Staff = styled.div`
       column-gap: 1rem;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 1.5rem;
+
+    height: auto;
+  }
 `;
 
 
@@ -68,7 +80,7 @@ export const StafCardfWithDescription = styled.div`
 
   border-radius: 10px;
   overflow: hidden;
-  height: 100%;
+  min-height: 28rem;
 
   @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
     & {
@@ -86,7 +98,7 @@ export const CardImage = styled.div<CardImageProps>`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  min-height: 20rem;
   width: 100%;
 `;
 
@@ -140,4 +152,6 @@ export const StaffCardSimple = styled(CardImage)`
     white-space: nowrap;
     z-index: 10;
   }
+
+  
 `;

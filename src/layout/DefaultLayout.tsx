@@ -6,7 +6,6 @@ import { MenuMobile } from "../components/MenuMobile";
 
 export function DefaultLayout() {
   const { menuVisible } = useMenu();
-  console.log("menuVisible: ", menuVisible)
 
   return (
     <LayoutContainer>

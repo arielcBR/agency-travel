@@ -65,9 +65,7 @@ export const HeaderMobile = styled.div`
     width: 3rem;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINT.LG}) {
-    & {
-      display: none;
-    }
+  @media (min-width: ${DEVICE_BREAKPOINT.MD}) {
+    display: none;
   }
 `;

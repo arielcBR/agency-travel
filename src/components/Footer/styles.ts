@@ -20,6 +20,8 @@ export const FooterContainer = styled.footer`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    padding-bottom: 6rem;
+
     .isVisible {
       display: none;
     }

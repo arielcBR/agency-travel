@@ -85,10 +85,10 @@ export const HeroSectionContainer = styled.section`
 
   @media (max-width: ${DEVICE_BREAKPOINT.XS}) {
     > main {
-      > h1, p {
+      > h1,
+      p {
         text-align: center;
       }
-
     }
   }
 `;

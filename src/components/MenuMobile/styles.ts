@@ -5,7 +5,7 @@ export const MenuMobileContainer = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1000;
+  z-index: 10000;
 
   font-family: "Montserrat", sans-serif;
   color: ${({ theme }) => theme.white};
@@ -26,7 +26,7 @@ export const Header = styled.header`
 
     color: ${({ theme }) => theme.white};
     font-size: 2rem;
-    padding: 3.75rem 1.75rem 1.75rem;
+    padding: 1.75rem 1.75rem 1.75rem;
     width: calc(50% - 1rem);
 
     svg {

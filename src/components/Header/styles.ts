@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { DEVICE_BREAKPOINT } from "../../styles/devicesBreakpoint";
 
 export const HeaderContainer = styled.header`
-  height: 6rem;
   width: 100%;
 `;
 

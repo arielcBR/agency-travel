@@ -30,7 +30,7 @@ export const FooterContainer = styled.footer`
 
 export const FooterBody = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 2fr 1fr 1.5fr;
   grid-template-rows: 1fr;
   grid-column-gap: 8rem;
   justify-content: space-between;
@@ -38,7 +38,7 @@ export const FooterBody = styled.div`
   margin-bottom: 1rem;
 
   @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
-    grid-template-columns: 2.25fr 1fr 1fr 1.5fr;
+    grid-template-columns: 2fr auto 1.5fr;
     grid-column-gap: 2.5rem;
   }
 
@@ -73,7 +73,7 @@ export const FooterDescription = styled.div`
   gap: 2rem;
 
   color: ${({ theme }) => theme.white};
-  text-align: start;
+  text-align: justify;
 
   > p {
     margin-bottom: 2.5rem;
@@ -127,9 +127,11 @@ export const FooterBase = styled.div`
   }
 `;
 
-export const FooterMap = styled(FooterBase)``;
+export const FooterPolicies = styled(FooterBase)`
+  display: flex;
+  flex-direction: column;
 
-export const FooterPolicies = styled(FooterBase)``;
+`;
 
 export const SocialNetworks = styled.div`
   display: flex;

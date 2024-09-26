@@ -10,7 +10,6 @@ import {
   FooterBody,
   FooterDescription,
   LogoWrapper,
-  FooterMap,
   FooterPolicies,
   FooterBottom,
   SocialNetworks,
@@ -53,23 +52,6 @@ export function Footer() {
             </Link>
           </SocialNetworks>
         </FooterDescription>
-        <FooterMap className="isVisible">
-          <span>Company</span>
-          <ul>
-            <li>
-              <a href="#">Sobre nós</a>
-            </li>
-            <li>
-              <a href="#">Serviços</a>
-            </li>
-            <li>
-              <a href="#">Porque viajar conosco</a>
-            </li>
-            <li>
-              <a href="#">Staff</a>
-            </li>
-          </ul>
-        </FooterMap>
         <FooterPolicies className="isVisible">
           <span>Suporte</span>
           <ul>

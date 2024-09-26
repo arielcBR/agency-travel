@@ -14,11 +14,9 @@ export const OurServicesContainer = styled.section`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
-    & {
       h3 {
         font-size: 2.5rem;
       }
-    }
   }
 `;
 
@@ -72,9 +70,7 @@ export const HeaderContent = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
-    & {
       flex-direction: column;
-    }
   }
 `;
 
@@ -89,10 +85,8 @@ export const InfoContent = styled.div`
   width: 60%;
 
   @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
-    & {
       gap: 2rem;
       font-size: 1.5rem;
-    }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.SM}) {

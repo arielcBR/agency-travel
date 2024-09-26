@@ -19,9 +19,7 @@ export const HeaderDesktop = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
-    & {
       display: none;
-    }
   }
 `;
 

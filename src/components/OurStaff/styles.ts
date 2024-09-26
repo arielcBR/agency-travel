@@ -57,10 +57,8 @@ export const Staff = styled.div`
   width: 100%;
 
   @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
-    & {
       grid-template-columns: 35% 30% 32.5%;
       column-gap: 1rem;
-    }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
@@ -83,9 +81,7 @@ export const StafCardfWithDescription = styled.div`
   min-height: 28rem;
 
   @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
-    & {
       grid-template-columns: 40% 60%;
-    }
   }
 `;
 

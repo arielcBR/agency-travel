@@ -16,7 +16,7 @@ export const InputStyled = styled.input`
   padding: 2rem;
   width: 100%;
 
-  &::placeholder {
+  ::placeholder {
     color: 1px solid ${({ theme }) => theme["gray-400"]};
     font-size: 1.5rem;
   }

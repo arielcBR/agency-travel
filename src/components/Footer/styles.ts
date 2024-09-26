@@ -62,9 +62,7 @@ export const LogoWrapper = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.MD}) {
-    & {
       align-self: center;
-    }
   }
 `;
 
@@ -121,13 +119,11 @@ export const FooterBase = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.MD}) {
-    & {
       margin-bottom: 2rem;
     }
     > span,
     li {
       align-self: center;
-    }
   }
 `;
 
@@ -163,9 +159,7 @@ export const SocialNetworks = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.MD}) {
-    & {
       align-self: center;
-    }
   }
 `;
 

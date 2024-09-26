@@ -18,11 +18,11 @@ export const ButtonContainer = styled.button`
   white-space: nowrap;
   width: fit-content;
 
-  &:not(:disabled):hover {
+  :not(:disabled):hover {
     background: ${({ theme }) => theme["brown-100"]};
   }
 
-  &:disabled {
+  :disabled {
     background: ${({ theme }) => theme["brown-300"]};
     cursor: not-allowed;
     opacity: 0.6;

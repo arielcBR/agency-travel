@@ -63,7 +63,7 @@ export const MobileButton = styled.div`
 
   z-index: 1000;
 
-  &:hover {
+  :hover {
     background-color: #128c7e; 
   }
 

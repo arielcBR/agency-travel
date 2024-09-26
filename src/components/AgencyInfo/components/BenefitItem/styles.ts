@@ -58,9 +58,7 @@ export const BenefitTitle = styled.h4`
   margin-bottom: 1.3rem;
 
   @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
-    & {
       font-size: 1.5rem;
-    }
   }
 `;
 
@@ -71,8 +69,6 @@ export const BenefitDescription = styled.p`
   text-align: justify;
 
   @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
-    & {
       font-size: 1.25rem;
-    }
   }
 `;

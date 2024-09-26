@@ -20,8 +20,8 @@ export function MenuMobile() {
         </Header>
         <Main className="container">
           <nav>
-            <ul>
-              <li onClick={handleCloseMenu}>
+            <ul onClick={handleCloseMenu}>
+              <li>
                 <a href="#aboutUs">Sobre</a>
               </li>
               <li>

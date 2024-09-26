@@ -3,7 +3,7 @@ import { Header } from "../Header";
 
 export function HeroSection() {
   return (
-    <HeroSectionContainer className="container">
+    <HeroSectionContainer id="home" className="container">
       <Header />
       <main>
         <h1>Explore Buenos Aires</h1>

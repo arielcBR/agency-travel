@@ -9,7 +9,7 @@ export const AgencyInfoContainer = styled.section`
   margin-bottom: 5rem;
   width: 100%;
 
-  > h4 {
+  > h3 {
     color: ${({ theme }) => theme.black};
     font-family: Montserrat, sans-serif;
     font-size: 2.5rem;
@@ -30,6 +30,10 @@ export const AgencyInfoContainer = styled.section`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    > h3 {
+      text-align: center;
+    }
+    
     > div {
       grid-template-columns: 1fr;
       grid-template-rows: auto;

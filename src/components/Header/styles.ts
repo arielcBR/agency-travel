@@ -6,20 +6,19 @@ export const HeaderContainer = styled.header`
 `;
 
 export const HeaderDesktop = styled.div`
-  display: flex;
-  align-items: center;
+display: none;
+border-bottom: 1px solid ${({ theme }) => theme["gray-300"]};
+width: 100%;
 
-  border-bottom: 1px solid ${({ theme }) => theme["gray-300"]};
-  width: 100%;
+> img {
+  margin-right: 5.6rem;
+  height: 3.2rem;
+  width: 3.2rem;
+}
 
-  > img {
-    margin-right: 5.6rem;
-    height: 3.2rem;
-    width: 3.2rem;
-  }
-
-  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
-      display: none;
+@media (min-width: ${DEVICE_BREAKPOINT.MD}) {
+    display: flex;
+    align-items: center;
   }
 `;
 

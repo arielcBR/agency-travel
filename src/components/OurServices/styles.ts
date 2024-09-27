@@ -14,9 +14,15 @@ export const OurServicesContainer = styled.section`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.LG}) {
-      h3 {
-        font-size: 2.5rem;
-      }
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    h3 {
+      text-align: center;
+    }
   }
 `;
 

@@ -67,12 +67,18 @@ export const AboutUsContainer = styled.section`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
-      flex-direction: column;
+    flex-direction: column;
 
-      margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
 
     > img {
       width: 80%;
+    }
+
+    > div {
+      > h3 {
+        text-align: center;
+      }
     }
   }
 `;

@@ -58,6 +58,10 @@ export const GalleryHeader = styled.div`
 
   @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
     width: 100%;
+
+    > h3 {
+      text-align: center;
+    }
   }
 `;
 

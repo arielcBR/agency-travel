@@ -18,10 +18,9 @@ export const HeroSectionContainer = styled.section`
     gap: 3.7rem;
 
     color: ${({ theme }) => theme.white};
-    width: 60rem;
+    width: 100%;
 
-    position: absolute;
-    top: 40%;
+    margin-top: 40vh;
 
     > h1 {
       font-family: "Montserrat", sans-serif;

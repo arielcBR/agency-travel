@@ -6,7 +6,10 @@ export function HeroSection() {
     <HeroSectionContainer id="home" className="container">
       <Header />
       <main>
-        <h1>Explore Buenos Aires</h1>
+        <h1>
+          <span>Explore</span>
+          <span>Buenos Aires</span>
+        </h1>
         <p>
           Nosso mundo é incrivelmente belo, com uma rica diversidade de
           paisagens, culturas e vida selvagem

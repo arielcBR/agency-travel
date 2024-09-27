@@ -15,7 +15,7 @@ export function OurStaff() {
   return (
     <OurStaffContainer id="staff" className="container">
       <CardHeader>
-        <h4>Nossa equipe especializada</h4>
+        <h3>Nossa equipe especializada</h3>
         <p>
           Com anos de experiência, nosso guia é hábil em fornecer comentários
           perspicazes e tornar sua viagem interessante e envolvente. Da história

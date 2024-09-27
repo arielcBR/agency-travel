@@ -23,6 +23,10 @@ export const HeroSectionContainer = styled.section`
     margin-top: 40vh;
 
     > h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
       font-family: "Montserrat", sans-serif;
       font-size: 8rem;
       font-weight: 600;
@@ -49,6 +53,7 @@ export const HeroSectionContainer = styled.section`
 
       > p {
         font-size: clamp(1.3rem, 15vw, 1.8rem);
+        text-align: center;
       }
     }
   }
@@ -74,6 +79,7 @@ export const HeroSectionContainer = styled.section`
 
       > h1 {
         font-size: clamp(3rem, 15vw, 3.5rem);
+        text-align: center;
       }
 
       > p {

@@ -19,7 +19,7 @@ export const CardHeader = styled.div`
   text-align: justify;
   width: 50%;
 
-  > h4 {
+  > h3 {
     color: ${({ theme }) => theme.black};
     font-family: Montserrat, sans-serif;
     font-size: 3rem;
@@ -36,8 +36,9 @@ export const CardHeader = styled.div`
       font-size: 1.5rem;
     }
 
-    > h4 {
-      font-size: 2.5rem;
+    > h3 {
+      font-size: 2.25rem;
+      text-align: center;
     }
   }
 

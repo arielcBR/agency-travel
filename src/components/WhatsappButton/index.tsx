@@ -1,7 +1,7 @@
 import { WhatsappButtonContainer, DesktopButton ,MobileButton } from "./styles";
 
 export const whatsappLink =
-  "https://api.whatsapp.com/message/PSFWVW3TPLQXF1?autoload=1";
+  "https://wa.me/5491127981109?text=Gostaria%20de%20mais%20informações!";
 
 export function WhatsappButton() {
   return (

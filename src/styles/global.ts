@@ -13,6 +13,10 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
   }
 
+  html {
+   /* overflow-x: hidden;  */
+  }
+
   :focus {
     outline: 0;
   }

@@ -55,7 +55,7 @@ export const MobileButton = styled.div`
   text-transform: capitalize;
   
   cursor: pointer;
-  width: 100vw;
+  width: 100%;
 
   position: fixed;
   bottom: 0;

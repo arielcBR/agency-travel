@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  body, html { 
+    overflow-x:hidden; 
+  }
+
   :root {
     background-color: ${({ theme }) => theme["white"]};
     font-size: 62.5%;

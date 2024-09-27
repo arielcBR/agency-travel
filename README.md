@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# 🌟 Seu Guia - Landing Page in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📸 Screenshots of the project
+![Mobile previews](https://i.postimg.cc/SsfydrmY/collage-agency-github.png)
+ 
+🚀 Deploy: [Link landing page](https://seuguiaba.netlify.app/)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to the landing page repository for **Seu Guia**, a Brazilian agency located in Buenos Aires, Argentina, focused on tourism for the Brazilian audience. This project showcases my skills in front-end development and user interface design, emphasizing an optimized and visually appealing user experience.
 
-## Expanding the ESLint configuration
+## 🔧 Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: JavaScript library for building user interfaces.
+- **Styled-Components**: Library for styling React components with CSS-in-JS.
+- **TypeScript**: A superset of JavaScript that adds static typing.
+- **React Router**: For navigation between pages.
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Responsive Design**: Adapts to various screen sizes, ensuring a great experience on mobile and desktop devices.
+- **Interactivity**: Interactive components that enhance usability.
+- **Smooth Animations**: Added with Styled-Components for an engaging visual experience.
+- **Performance**: Optimized for fast loading and improved user experience.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 📦 Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To run this project locally, follow the steps below:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/arielcBR/agency-travel.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd AGENCY-TRAVEL
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+💡 How to Contribute
+Feel free to open issues or make pull requests. I'm always looking to improve and learn!
+
+📫 Contact
+LinkedIn: [Ariel Campos](https://www.linkedin.com/in/campos-ariel/)
+Email: ariel.campos94@yahoo.com

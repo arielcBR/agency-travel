@@ -32,18 +32,18 @@ export function Slider({ slides }: SliderProps) {
             "--swiper-navigation-size": "25px",
           } as any
         }
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: true,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: true,
+        // }}
         breakpoints={{
           [parseInt(DEVICE_BREAKPOINT.XS)]: {
-            slidesPerView: 2,
-            spaceBetween: 160,
+            slidesPerView: 1,
+            spaceBetween: 10,
           },
           [parseInt(DEVICE_BREAKPOINT.SM)]: {
             slidesPerView: 2,
-            spaceBetween: 120,
+            spaceBetween: 10,
           },
           [parseInt(DEVICE_BREAKPOINT.MD)]: {
             slidesPerView: 3,
@@ -60,7 +60,10 @@ export function Slider({ slides }: SliderProps) {
         }}
       >
         {slides.map((slide) => (
-          <SwiperSlide key={uuidv4()}>
+          <SwiperSlide
+            key={uuidv4()}
+            style={{ display: "flex", alignItems: "center" , justifyContent: "center" }}
+          >
             <ServiceCard service={slide} />
           </SwiperSlide>
         ))}

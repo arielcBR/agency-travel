@@ -14,7 +14,11 @@ export const ServiceCardContainer = styled.div`
   width: 80vw;
 
   @media (max-width: ${DEVICE_BREAKPOINT.XL}) {
-      height: 35rem;
+    height: 35rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINT.SM}) {
+    height: 30rem;
   }
 `;
 
